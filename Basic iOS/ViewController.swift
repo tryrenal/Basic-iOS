@@ -15,5 +15,17 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func editProfile(_ sender: UIBarButtonItem) {
+        
+        let alert = UIAlertController(title: "Apakah anda berniat untuk mengubah profil?", message: "Anda dapat mempengaruhi profil anda sekarang juga", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "ya", style: .default, handler: { action in print("mengganti profile")}))
+    
+        alert.addAction(UIAlertAction(title: "tidak", style: .cancel, handler: {
+            action in print("Membatalkan ubah profile")
+        }))
+        
+        self.present(alert, animated: true)
+    }
 }
 

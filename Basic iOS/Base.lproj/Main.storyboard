@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--My Profile-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Basic_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -111,7 +111,13 @@
                             <constraint firstItem="8dJ-5g-WxY" firstAttribute="top" secondItem="xK7-Ye-CUB" secondAttribute="bottom" constant="5" id="zGR-QK-GBc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="TA7-0d-wDk"/>
+                    <navigationItem key="navigationItem" title="My Profile" id="Hz6-Uj-SwR">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="aCc-UW-l4l">
+                            <connections>
+                                <action selector="editProfile:" destination="BYZ-38-t0r" id="VxD-BQ-V9p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,11 +140,11 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="75.669642857142847"/>
         </scene>
-        <!--Item-->
+        <!--My Profile-->
         <scene sceneID="bLX-uB-a3I">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fYQ-jZ-3Qb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="lUR-wr-7P2"/>
+                    <tabBarItem key="tabBarItem" title="My Profile" image="profile" id="lUR-wr-7P2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="p4K-gw-Drl">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -206,6 +212,7 @@
     </scenes>
     <resources>
         <image name="background" width="375" height="310"/>
+        <image name="profile" width="21" height="21"/>
         <image name="sample" width="1980" height="1979"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
