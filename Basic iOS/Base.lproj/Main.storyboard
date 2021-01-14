@@ -1,24 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pw8-px-LdH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Basic_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QkD-lR-NNy">
+                                <rect key="frame" x="0.0" y="88" width="414" height="328"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="XAj-sx-yuX" kind="embed" id="gqY-cK-el7"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="TA7-0d-wDk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="75.669642857142847"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4Vc-Sw-4Do">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Pw8-px-LdH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hjf-ey-3fA">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fYQ-jZ-3Qb" kind="relationship" relationship="viewControllers" id="67W-dQ-ocA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NiY-VZ-WcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="75.669642857142847"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="bLX-uB-a3I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fYQ-jZ-3Qb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="lUR-wr-7P2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p4K-gw-Drl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UyV-Ed-gVS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mym-Sm-g1S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="75.669642857142847"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4xq-zj-lnw">
+            <objects>
+                <viewController id="XAj-sx-yuX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D45-k7-OFM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="328"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ty2-LL-dhw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="319"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample" translatesAutoresizingMaskIntoConstraints="NO" id="Fqi-ai-sdk">
+                                <rect key="frame" x="107" y="24" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="OeT-tn-4Dt"/>
+                                    <constraint firstAttribute="width" constant="200" id="XEP-UQ-hZx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gilang Ramadhan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7n-NR-dCD">
+                                <rect key="frame" x="112" y="236" width="190.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semarang, Indonesia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PN9-DF-ECu">
+                                <rect key="frame" x="118.5" y="274" width="177.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fqi-ai-sdk" firstAttribute="top" secondItem="D45-k7-OFM" secondAttribute="top" constant="24" id="C46-1x-XuP"/>
+                            <constraint firstItem="ty2-LL-dhw" firstAttribute="leading" secondItem="D45-k7-OFM" secondAttribute="leading" id="Cev-gg-SmV"/>
+                            <constraint firstItem="G7n-NR-dCD" firstAttribute="centerX" secondItem="D45-k7-OFM" secondAttribute="centerX" id="E0w-gG-KfO"/>
+                            <constraint firstAttribute="bottom" secondItem="ty2-LL-dhw" secondAttribute="bottom" constant="9" id="R9b-Dz-zJo"/>
+                            <constraint firstItem="PN9-DF-ECu" firstAttribute="centerX" secondItem="D45-k7-OFM" secondAttribute="centerX" id="lIC-ty-vxC"/>
+                            <constraint firstItem="ty2-LL-dhw" firstAttribute="top" secondItem="D45-k7-OFM" secondAttribute="top" id="sN3-oN-9sE"/>
+                            <constraint firstAttribute="trailing" secondItem="ty2-LL-dhw" secondAttribute="trailing" id="u10-uW-Xl3"/>
+                            <constraint firstItem="PN9-DF-ECu" firstAttribute="top" secondItem="G7n-NR-dCD" secondAttribute="bottom" constant="8" symbolic="YES" id="v8h-qc-x3a"/>
+                            <constraint firstItem="Fqi-ai-sdk" firstAttribute="centerX" secondItem="D45-k7-OFM" secondAttribute="centerX" id="vNr-25-ryl"/>
+                            <constraint firstItem="G7n-NR-dCD" firstAttribute="top" secondItem="Fqi-ai-sdk" secondAttribute="bottom" constant="12" id="xYI-Ri-BcE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c2n-up-4h3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2676.811594202899" y="-58.258928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="375" height="310"/>
+        <image name="sample" width="1980" height="1979"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
