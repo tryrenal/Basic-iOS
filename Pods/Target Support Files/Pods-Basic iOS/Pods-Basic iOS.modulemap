@@ -1,0 +1,6 @@
+module Pods_Basic_iOS {
+  umbrella header "Pods-Basic iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
