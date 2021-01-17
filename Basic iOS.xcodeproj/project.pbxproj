@@ -17,6 +17,8 @@
 		1560D11B25B44D950067457B /* HeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1560D11925B44D950067457B /* HeroTableViewCell.xib */; };
 		1560D12225B4504C0067457B /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560D12125B4504C0067457B /* Hero.swift */; };
 		1560D12525B450560067457B /* DummyHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560D12425B450560067457B /* DummyHeroes.swift */; };
+		1560D12A25B4538C0067457B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560D12825B4538C0067457B /* DetailViewController.swift */; };
+		1560D12B25B4538C0067457B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1560D12925B4538C0067457B /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		1560D11925B44D950067457B /* HeroTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroTableViewCell.xib; sourceTree = "<group>"; };
 		1560D12125B4504C0067457B /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		1560D12425B450560067457B /* DummyHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyHeroes.swift; sourceTree = "<group>"; };
+		1560D12825B4538C0067457B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1560D12925B4538C0067457B /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			children = (
 				1559406525AED6DB00860365 /* ViewController.swift */,
 				1560D11825B44D950067457B /* HeroTableViewCell.swift */,
+				1560D12825B4538C0067457B /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 				1560D11925B44D950067457B /* HeroTableViewCell.xib */,
 				1559406725AED6DB00860365 /* Main.storyboard */,
 				1559406C25AED6DC00860365 /* LaunchScreen.storyboard */,
+				1560D12925B4538C0067457B /* DetailViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,6 +176,7 @@
 			files = (
 				1559406E25AED6DC00860365 /* LaunchScreen.storyboard in Resources */,
 				1559406B25AED6DC00860365 /* Assets.xcassets in Resources */,
+				1560D12B25B4538C0067457B /* DetailViewController.xib in Resources */,
 				1559406925AED6DB00860365 /* Main.storyboard in Resources */,
 				1560D11B25B44D950067457B /* HeroTableViewCell.xib in Resources */,
 			);
@@ -188,6 +195,7 @@
 				1559406225AED6DB00860365 /* AppDelegate.swift in Sources */,
 				1559406425AED6DB00860365 /* SceneDelegate.swift in Sources */,
 				1560D11A25B44D950067457B /* HeroTableViewCell.swift in Sources */,
+				1560D12A25B4538C0067457B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

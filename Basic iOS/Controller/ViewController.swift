@@ -14,7 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     
+        self .navigationItem.title = "Pahlawan Indonesia"
+        
         heroTableView.dataSource = self
+        
+        heroTableView.delegate = self
         
         heroTableView.register(UINib(nibName: "HeroTableViewCell", bundle: nil), forCellReuseIdentifier: "HeroCell")
     }
@@ -39,5 +43,16 @@ extension ViewController : UITableViewDataSource {
         } else {
             return UITableViewCell()
         }
+    }
+    
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detail = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        
+        detail.hero = heroes[indexPath.row]
+        
+        self.navigationController?.pushViewController(detail, animated: true)
     }
 }
